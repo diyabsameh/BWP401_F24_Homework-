@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الفعالية - دليل فعاليات المدينة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- نفس الهيدر -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="شعار الدليل" height="40" class="d-inline-block align-text-top">
+                دليل فعاليات المدينة
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <img src="assets/img/events/event1.jpg" class="img-fluid rounded mb-4" alt="تفاصيل الفعالية">
+                <h1 id="eventTitle">مهرجان الموسيقى السنوي</h1>
+                <div class="event-meta mb-4">
+                    <span class="badge bg-primary me-2" id="eventCategory">موسيقى</span>
+                    <span class="text-muted" id="eventDate">15-17 أكتوبر 2024</span>
+                    <span class="text-muted me-3" id="eventLocation">الساحة المركزية</span>
+                </div>
+                <p id="eventDescription" class="lead">
+                    انضموا إلينا في أضخم مهرجان موسيقي سنوي يجمع أفضل الفنانين المحليين والعالميين. 
+                    ثلاثة أيام من المتعة والفن والترفيه مع عروض حية وورش عمل تفاعلية.
+                </p>
+                
+                <div class="action-buttons my-4">
+                    <button class="btn btn-success me-2" onclick="addToCalendar()">أضف للتقويم</button>
+                    <button class="btn btn-outline-primary" onclick="shareEvent()">شارك الفعالية</button>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">معلومات الفعالية</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>التاريخ:</strong> <span id="infoDate">15-17 أكتوبر 2024</span></li>
+                            <li class="list-group-item"><strong>الوقت:</strong> <span id="infoTime">6:00 مساءً - 12:00 منتصف الليل</span></li>
+                            <li class="list-group-item"><strong>المكان:</strong> <span id="infoLocation">الساحة المركزية</span></li>
+                            <li class="list-group-item"><strong>السعر:</strong> <span id="infoPrice">مجاني</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- فعاليات ذات صلة -->
+        <section class="mt-5">
+            <h3>فعاليات ذات صلة</h3>
+            <div class="row" id="relatedEvents">
+                <!-- سيتم تعبئتها بالجافاسكريبت -->
+            </div>
+        </section>
+    </main>
+
+    <!-- نفس الفوتر -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>معلومات التواصل</h5>
+                    <p>البريد: info@cityevents.com</p>
+                    <p>الهاتف: +966123456789</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>تابعنا على</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3">تويتر</a>
+                        <a href="#" class="text-light me-3">فيسبوك</a>
+                        <a href="#" class="text-light">انستغرام</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
